@@ -1,8 +1,7 @@
-# React + Vite
+<h1 align="center">To-Cedis</h1>
+😄 Hi there!
+<h3 align="center">A simple currency converter using REACTJS, TailwindCSS, Vite & JS</h3>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 🪴The idea just came to me when i wanted to convert an amount of money from Dollars **To Cedis**
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 😕 I couldn't decide whether to use frameworks or nah so i'll do this twice haha(3 months later, here it is)
