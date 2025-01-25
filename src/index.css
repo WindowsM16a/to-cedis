@@ -1,4 +1,4 @@
-@import tailwindcss;
+@import "tailwindcss";
 
 :root {
     --bg-purp: rgb(171, 63, 171);
@@ -19,4 +19,20 @@ body {
 ::selection {
     background: var(--bg-blue);
     color: white;
+}
+
+@layer theme {
+    .bg-purp {
+        background: var(--bg-purp);
+    }
+}
+
+@layer utilities {
+    .shadow-purp {
+        box-shadow: 0.2rem 0.2rem 1.4rem var(--bg-purp-shad)
+    }
+
+    .shadow-blue {
+        box-shadow: 0.2rem 0.2rem 1.4rem var(--bg-blue-shad);
+    }
 }

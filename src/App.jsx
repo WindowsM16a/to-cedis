@@ -1,12 +1,12 @@
 function App() {
   return (
     <>
-      <div className="container flex flex-row items-center justify-center w-[26rem] gap-4 bg-white rounded-b-4xl p-4 shadow-3xl shadow-blue">
-        <div className="heading">
+      <div className="container flex flex-col items-center justify-center w-[26rem] gap-4 bg-white rounded-[1.8rem] p-[2.5rem] shadow-blue">
+        <div className="heading flex flex-row items-center justify-center gap-4 font-bold">
           <img
             src="https://res.cloudinary.com/dx72ndl5e/image/upload/v1730431141/ulyehpdbamtysp1dfhsc.png"
             alt="To-Cedis logo"
-            className="header-logo w-[2rem] h-[1.8rem] bg-black p-1 rounded-[1/2]"
+            className="header-logo w-[2rem] h-[1.8rem] bg-black p- rounded-[50%]"
           />
           <header className=" flex items-center justify-center gap-4">
             Currency Converter
@@ -17,7 +17,7 @@ function App() {
             <p>Enter Amount</p>
             <input type="number" placeholder="1" id="to-amount" />
           </div>
-          <div className="from-to-list">
+          <div className="from-to-list flex flex-row items-center justify-center gap-[2rem]">
             <div className="from">
               <p>From</p>
               <div className="select-box">
