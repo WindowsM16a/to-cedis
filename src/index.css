@@ -1,0 +1,22 @@
+@import tailwindcss;
+
+:root {
+    --bg-purp: rgb(171, 63, 171);
+    --bg-purp-shad: rgb(101, 29, 101);
+    --bg-blue: rgb(137, 207, 240);
+    --bg-blue-shad: rgb(68, 142, 159);
+}
+
+body {
+    min-height: 100vh;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-blue);
+}
+
+::selection {
+    background: var(--bg-blue);
+    color: white;
+}
