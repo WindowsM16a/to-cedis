@@ -208,6 +208,7 @@ function App() {
               value={amount ? formatNumber(amount) : ""}
               onChange={handleAmountChange}
               id="to-amount"
+              placeholder="1000"
             />
           </div>
           <div className="from-to-list flex flex-row items-center justify-between mt-[1.4rem]">
