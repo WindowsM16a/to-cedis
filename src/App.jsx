@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { getExchangeRate } from "../src/scripts/main.js";
+import { Analytics } from "@vercel/analytics/react";
 
 const currencies = {
   AED: "AE",
@@ -268,12 +269,13 @@ function App() {
           <button
             onClick={handleExchangeRate}
             type="button"
-            className="rates-btn w-full h-[2.9rem] text-center rates-font-clamped font-medium bg-btn-blue text-white cursor-pointer border-none outline-none rounded-[1.1rem] transition-all ease-in-out duration-300 hover:bg-btn-purp hover:text-white hover:transition-all hover:ease-in-out hover:duration-300 hover:rounded-[1rem]"
+            className="rates-btn w-full h-[2.9rem] text-center rates-font-clamped font-medium bg-btn-blue text-white cursor-pointer border-none outline-none rounded-[1.1rem] transition-all ease-in-out duration-300 hover:bg-btn-purp focus:bg-btn-purp hover:text-white hover:transition-all hover:ease-in-out hover:duration-300 hover:rounded-[1rem]"
           >
             Get Exchange Rates
           </button>
         </form>
       </div>
+      <Analytics />
     </>
   );
 }
