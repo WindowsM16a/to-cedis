@@ -253,8 +253,10 @@ function App() {
               <div className="select-box w-[7rem] h-[2.8rem] flex flex-row justify-center items-center border-select-box p-[0.4rem] rounded-[0.6rem]">
                 <img
                   className="w-[2rem] pr-[0.4rem] cursor-default"
-                  src="https://flagcdn.com/48x36/gh.png"
-                  alt="flag"
+                  src={`https://flagcdn.com/48x36/${currencies[
+                    toCurrency
+                  ].toLowerCase()}.png`}
+                  alt={`${fromCurrency} flag`}
                 />
                 <select
                   value={toCurrency}
