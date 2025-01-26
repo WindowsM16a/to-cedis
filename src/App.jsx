@@ -188,7 +188,7 @@ function App() {
 
   return (
     <>
-      <div className="container flex flex-col items-center justify-center w-[26rem] bg-white rounded-[1.8rem] p-[2.5rem] shadow-blue">
+      <div className="container flex flex-col items-center justify-center mw-[25rem] bg-white rounded-[1.8rem] p-[2.5rem] shadow-blue">
         <div className="heading flex flex-row items-center justify-center gap-4 font-bold">
           <img
             src="https://res.cloudinary.com/dx72ndl5e/image/upload/v1730431141/ulyehpdbamtysp1dfhsc.png"
