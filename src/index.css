@@ -21,18 +21,78 @@ body {
     color: white;
 }
 
-@layer theme {
-    .bg-purp {
-        background: var(--bg-purp);
-    }
-}
+@layer theme {}
 
 @layer utilities {
+    .bg-btn-purp {
+        background-color: var(--bg-purp);
+    }
+
+    .bg-btn-blue {
+        background-color: var(--bg-blue);
+    }
+
     .shadow-purp {
         box-shadow: 0.2rem 0.2rem 1.4rem var(--bg-purp-shad)
     }
 
     .shadow-blue {
         box-shadow: 0.2rem 0.2rem 1.4rem var(--bg-blue-shad);
+    }
+
+    .font-clamped {
+        font-size: clamp(1.5rem, 1vw, 1.7rem);
+    }
+
+    .form-p-clamped {
+        font-size: clamp(1.1rem, 2vw, 1.2rem);
+    }
+
+    .form-input-clamped {
+        font-size: clamp(1.1rem, 2vw, 1.3rem);
+    }
+
+    .padding-logo {
+        padding: 0.2rem 0.25rem 0.2rem 0rem;
+    }
+
+    .margin-form {
+        margin: 2.7rem 0 1.3rem 0;
+    }
+
+    .border-form-input {
+        border: 0.1rem solid var(--bg-blue-shad);
+    }
+
+    .padding-form-input {
+        padding: 0 0.95rem;
+    }
+
+    .border-input-focus {
+        border: 0.1rem solid var(--bg-blue);
+    }
+
+    .padding-input-focus {
+        padding: 0 0.95rem;
+    }
+
+    .border-select-box {
+        border: 0.09rem solid var(--bg-blue-shad);
+    }
+
+    .margin-select-box {
+        margin: 0 -0.2rem 00.2rem;
+    }
+
+    .select-font-clamped {
+        font-size: clamp(0.8rem, 2vw, 1rem);
+    }
+
+    .rates-margin {
+        margin: 2.3rem 0 1.1rem;
+    }
+
+    .rates-font-clamped {
+        font-size: clamp(1.3rem, 2vw, 1.5rem);
     }
 }
