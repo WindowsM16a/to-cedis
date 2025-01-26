@@ -9,6 +9,7 @@
 
 body {
     min-height: 100vh;
+    font-family: "Poppins", sans-serif;
     padding: 0 1rem;
     display: flex;
     align-items: center;
@@ -21,7 +22,19 @@ body {
     color: white;
 }
 
-@layer theme {}
+.select-box select::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.select-box select::-webkit-scrollbar-track {
+    background: var(--bg-blue);
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+    background: var(--bg-blue-shad);
+    border-radius: 0.3rem;
+    border-right: 0.1rem solid white;
+}
 
 @layer utilities {
     .bg-btn-purp {
@@ -95,4 +108,5 @@ body {
     .rates-font-clamped {
         font-size: clamp(1.3rem, 2vw, 1.5rem);
     }
+
 }
