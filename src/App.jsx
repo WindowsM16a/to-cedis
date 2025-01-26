@@ -175,9 +175,12 @@ function App() {
   };
 
   const handleAmountChange = (e) => {
-    // Remove any non-digit characters except decimal point
-    const value = e.target.value.replace(/[^0-9.]/g, "");
-    setAmount(value);
+    // Get the raw value without formatting
+    const rawValue = e.target.value.replace(/,/g, "");
+    // Only update if it's a valid number or empty
+    if (rawValue === "" || !isNaN(rawValue)) {
+      setAmount(rawValue);
+    }
   };
 
   const handleExchangeRate = async (e) => {
@@ -271,7 +274,7 @@ function App() {
           <button
             onClick={handleExchangeRate}
             type="button"
-            className="rates-btn w-full h-[2.9rem] text-center rates-font-clamped font-medium bg-btn-blue text-white cursor-pointer border-none outline-none rounded-[1.1rem] hover:bg-purple-700 focus:bg-purple-700 active:bg-purple-800 transition-all duration-300 ease-in-out"
+            className="rates-btn w-full h-[2.9rem] text-center rates-font-clamped font-medium bg-btn-blue text-white cursor-pointer border-none outline-none rounded-[1.1rem] hover:bg-purple-700 focus:bg-purple-700 active:bg-black transition-all duration-300 ease-in-out"
           >
             Get Exchange Rates
           </button>
