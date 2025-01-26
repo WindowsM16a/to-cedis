@@ -260,7 +260,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="rates mt-[1.4rem] rates-margin font-medium">
+          <div className="rates mt-[1.4rem] rates-margin font-bold italic">
             {exchangeRate
               ? `${formatNumber(amount)} ${fromCurrency} = ${formatNumber(
                   (amount * exchangeRate).toFixed(2)
@@ -270,7 +270,7 @@ function App() {
           <button
             onClick={handleExchangeRate}
             type="button"
-            className="rates-btn w-full h-[2.9rem] text-center rates-font-clamped font-medium bg-btn-blue text-white cursor-pointer border-none outline-none rounded-[1.1rem] transition-all ease-in-out duration-300 hover:bg-btn-purp focus:bg-btn-purp hover:text-white hover:transition-all hover:ease-in-out hover:duration-300 hover:rounded-[1rem]"
+            className="rates-btn w-full h-[2.9rem] text-center rates-font-clamped font-medium bg-btn-blue text-white cursor-pointer border-none outline-none rounded-[1.1rem] hover:bg-purple-700 focus:bg-purple-700 active:bg-purple-800 transition-all duration-300 ease-in-out"
           >
             Get Exchange Rates
           </button>

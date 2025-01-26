@@ -109,4 +109,7 @@ body {
         font-size: clamp(1.3rem, 2vw, 1.5rem);
     }
 
+    .border-rates-btn {
+        border: 2px solid var(--bg-purp);
+    }
 }
