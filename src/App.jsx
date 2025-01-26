@@ -207,7 +207,7 @@ function App() {
             <p className="form-p-clamped mb-[0.4rem]">Enter Amount</p>
             <input
               className="w-full h-[3rem] border-form-input padding-form-input form-input-clamped outline-none rounded-[1.1rem] transition-all ease-in-out duration-300 focus:border-input-focus padding-input-focus"
-              type="number"
+              type="text"
               inputMode="numeric"
               value={amount ? formatNumber(amount) : ""}
               onChange={handleAmountChange}
