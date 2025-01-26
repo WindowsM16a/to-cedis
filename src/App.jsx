@@ -169,6 +169,7 @@ function App() {
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("GHS");
   const [exchangeRate, setExchangeRate] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const formatNumber = (num) => {
     return new Intl.NumberFormat().format(num);
@@ -185,8 +186,13 @@ function App() {
 
   const handleExchangeRate = async (e) => {
     e.preventDefault();
-    const rate = await getExchangeRate(fromCurrency, toCurrency);
-    setExchangeRate(rate);
+    setIsLoading(true);
+    try {
+      const rate = await getExchangeRate(fromCurrency, toCurrency);
+      setExchangeRate(rate);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -265,7 +271,9 @@ function App() {
             </div>
           </div>
           <div className="rates mt-[1.4rem] rates-margin font-bold italic">
-            {exchangeRate
+            {isLoading
+              ? "Getting current rates..."
+              : exchangeRate
               ? `${formatNumber(amount)} ${fromCurrency} = ${formatNumber(
                   (amount * exchangeRate).toFixed(2)
                 )} ${toCurrency}`
